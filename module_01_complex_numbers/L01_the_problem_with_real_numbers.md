@@ -188,7 +188,63 @@ Hint for `i⁻¹`: find a real number `r` and `s` such that `i · (r + si) = 1`.
 
 ---
 
-## 10. NEXT LESSON
+## 10. WORKED SOLUTIONS
+
+### E1 — Compute `i¹⁷`, `i⁴⁶`, `i⁻¹`
+
+```
+i¹⁷ → 17 mod 4 = 1 → i¹⁷ = i
+
+i⁴⁶ → 46 mod 4 = 2 → i⁴⁶ = -1
+
+i⁻¹ → find (r + si) such that i · (r + si) = 1
+     → ir + si² = 1
+     → ir + s(-1) = 1
+     → -s + ir = 1
+     → -s = 1 and r = 0
+     → s = -1, r = 0
+     → i⁻¹ = -i
+
+Check: i · (-i) = -i² = -(-1) = 1  ✓
+```
+
+### E2 — All 4 roots of `x⁴ - 1 = 0`
+
+```
+x⁴ - 1 = 0
+x⁴ = 1
+
+Factor as difference of squares:
+(x² - 1)(x² + 1) = 0
+
+x² - 1 = 0  →  x² = 1   →  x = 1, x = -1
+x² + 1 = 0  →  x² = -1  →  x = i, x = -i
+
+Four roots: {1, -1, i, -i}
+```
+
+Two real, two complex. Degree 4 → exactly 4 roots. The Fundamental Theorem of Algebra holds.
+
+### E3 — Why `i` and `j` can't both equal `√(-1)` as separate objects
+
+```
+If i = √(-1) and j = √(-1) as distinct objects, then:
+
+i² = -1
+j² = -1
+
+So i² = j², which means i² - j² = 0, so (i-j)(i+j) = 0.
+
+This forces either i = j (same object) or i = -j (negatives).
+```
+
+There is no room for a third option. The algebra forces them to be either identical or negatives of each other. Calling them "different" creates a contradiction.
+
+This is why `ℂ` has exactly one imaginary unit (and its negative). You can't extend the number system further in this direction without breaking algebra.
+
+---
+
+## 11. NEXT LESSON
 
 L01 established that `i` must exist and defined complex numbers as `a + bi`.
 
