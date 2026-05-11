@@ -103,4 +103,44 @@ $$\text{dist}(z, w) = |z - w|$$
 
 ---
 
-*Last updated: 2026-05-11 — covers L01, L02, L03.*
+### L04 — Polar Form and Euler's Formula
+
+**Polar form (cartesian ↔ polar):**
+$$a = r\cos\theta, \qquad b = r\sin\theta$$
+$$z = r(\cos\theta + i\sin\theta)$$
+
+**Euler's formula:**
+$$e^{i\theta} = \cos\theta + i\sin\theta$$
+
+**Polar form (compact):**
+$$z = r\,e^{i\theta}, \quad r = |z|, \quad \theta = \arg(z)$$
+
+**Euler's identity (`θ = π`):**
+$$e^{i\pi} + 1 = 0$$
+
+**Multiplication (moduli multiply, arguments add):**
+$$z\,w = r_1 r_2 \, e^{i(\theta_1 + \theta_2)}$$
+$$|zw| = |z|\cdot|w|, \qquad \arg(zw) = \arg(z) + \arg(w)$$
+
+**Division:**
+$$\frac{z}{w} = \frac{r_1}{r_2}\, e^{i(\theta_1 - \theta_2)}$$
+
+**Conjugation in polar form:**
+$$\overline{r\,e^{i\theta}} = r\,e^{-i\theta}$$
+
+**De Moivre's theorem (integer powers):**
+$$z^n = r^n\, e^{i\,n\theta}$$
+$$\big(r(\cos\theta + i\sin\theta)\big)^n = r^n(\cos n\theta + i\sin n\theta)$$
+
+**`n`-th roots of `w = R·e^(iφ)`:**
+$$z_k = R^{1/n}\, e^{i(\varphi + 2\pi k)/n}, \qquad k = 0, 1, \ldots, n-1$$
+
+**`n`-th roots of unity:**
+$$z_k = e^{i\,2\pi k / n}, \qquad k = 0, 1, \ldots, n-1$$
+$$\sum_{k=0}^{n-1} z_k = 0 \quad (n \geq 2)$$
+
+**Note:** all angles in **radians**. Principal value of `arg(z)` lives in `(−π, π]`. Polar form requires `z ≠ 0`.
+
+---
+
+*Last updated: 2026-05-11 — covers L01, L02, L03, L04.*
